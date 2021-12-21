@@ -1,0 +1,32 @@
+GET localhost:8080/getAll
+Accept: application/json
+
+###
+
+GET localhost:8080/getOne/5
+Accept: application/json
+
+###
+
+POST localhost:8080/createOne
+Content-Type: application/json
+
+{
+  "partDescription": "Yosemite Sam Mud Flaps",
+  "partName": "Extra classy Mudflaps!",
+  "price": 400.11
+}
+
+###
+PUT localhost:8080/updateOne
+Content-Type: application/json
+
+{
+  "id": 7,
+  "partDescription":"Truck Naughts",
+  "partName": "Super Elegant Trailer hitch addition",
+  "price": 30.88
+}
+
+###
+DELETE localhost:8080/deleteOne/6
